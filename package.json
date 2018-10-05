@@ -1,0 +1,35 @@
+{
+  "name": "totsuzen-dead",
+  "version": "1.0.0",
+  "description": "totsuzen no shi generetor",
+  "preferGlobal": true,
+  "bin": {
+    "totsuzen-dead": "dist/index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node dist/index.js",
+    "build": "babel src/index.js -o dist/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/masaki-shinkawa/totsuzen-dead.git"
+  },
+  "keywords": [
+    "npx"
+  ],
+  "author": "Masaki Shinkawa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/masaki-shinkawa/totsuzen-dead/issues"
+  },
+  "homepage": "https://github.com/masaki-shinkawa/totsuzen-dead#readme",
+  "dependencies": {
+    "eastasianwidth": "^0.2.0"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.1.2",
+    "@babel/core": "^7.1.2",
+    "@babel/preset-env": "^7.1.0"
+  }
+}
